@@ -1,0 +1,4 @@
+- [ ] Add useRef import to src/App.jsx
+- [ ] Create a ref for the products section
+- [ ] Attach ref to the main element containing ProductGrid
+- [ ] Add onClick handler to "Browse Products" button for smooth scrolling

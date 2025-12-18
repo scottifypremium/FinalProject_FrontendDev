@@ -181,6 +181,17 @@ function App() {
         "Featured Songs: MAGPAHINGA, JUMP, FILIPINA QUEEN, AURA, GABRIELA, ANO BA TALAGA TAYO, GOLDEN, MYSTICAL MAGICAL, OLD PHONE",
       specs: "8.5GB Disc | OSM Songs | 23K+ Songs Total",
     },
+
+     {
+      id: 16,
+      name: "T-X-BMB Series Volume 105 Disc",
+      category: "cds",
+      price: 549,
+      image: "txbmbvol105.jpg",
+      description:
+        "Featured Songs: MAGPAHINGA, JUMP, FILIPINA QUEEN, AURA, GABRIELA, ANO BA TALAGA TAYO, GOLDEN, MYSTICAL MAGICAL, OLD PHONE",
+      specs: "8.5GB Disc | OSM Songs | 23K+ Songs Total",
+    },
   ]
 
   const categories = ["all", "karaoke", "cds", "microphones", "amplifiers", "speakers"]
