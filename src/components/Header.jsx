@@ -1,10 +1,20 @@
+/* eslint-disable react/prop-types */
 "use client"
 
 import { useState } from "react"
 import CategoryFilter from "./CategoryFilter"
 import SearchBar from "./SearchBar"
 
-export default function Header({ cartCount, onCartClick, categories = [], selectedCategory, onCategorySelect, searchQuery = "", onSearchChange }) {
+export default function Header({
+  cartCount,
+  onCartClick,
+  categories = [],
+  selectedCategory,
+  onCategorySelect,
+  searchQuery = "",
+  onSearchChange,
+  onLogoClick,
+}) {
   const [showCategories, setShowCategories] = useState(false)
 
   const handleSelect = (category) => {
@@ -15,12 +25,18 @@ export default function Header({ cartCount, onCartClick, categories = [], select
   return (
     <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-40 animate-slide-in-down">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-2 animate-slide-in-left">
+        <button
+          type="button"
+          onClick={onLogoClick}
+          className="flex items-center gap-2 animate-slide-in-left focus:outline-none"
+        >
           <div className="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center transition-smooth hover:scale-110">
-            <span className="text-slate-900 font-bold text-lg"><img src="spectrum.png" alt="logo"/></span>
+            <span className="text-slate-900 font-bold text-lg">
+              <img src="spectrum.png" alt="logo" />
+            </span>
           </div>
           <h1 className="text-2xl font-sans font-bold text-white">AudioVista</h1>
-        </div>
+        </button>
 
         <div className="flex items-center gap-3 animate-slide-in-right">
           <div className="flex-1 max-w-md">

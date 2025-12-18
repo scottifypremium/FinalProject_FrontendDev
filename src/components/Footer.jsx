@@ -1,4 +1,11 @@
-export default function Footer({ onTermsClick, onPrivacyClick, onFAQClick, onContactUsClick, onWarrantyClick }) {
+export default function Footer({
+  onTermsClick,
+  onPrivacyClick,
+  onFAQClick,
+  onContactUsClick,
+  onWarrantyClick,
+  onCategoryClick,
+}) {
   return (
     <footer className="bg-slate-900 border-t border-slate-800 mt-16">
       <div className="container mx-auto px-4 py-12">
@@ -12,19 +19,49 @@ export default function Footer({ onTermsClick, onPrivacyClick, onFAQClick, onCon
             <h4 className="text-white font-semibold mb-4">Products</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <a href="#" className="hover:text-amber-500 transition-colors">
+                <button
+                  type="button"
+                  onClick={() => onCategoryClick?.("karaoke")}
+                  className="hover:text-amber-500 transition-colors cursor-pointer"
+                >
+                  Karaoke Players
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => onCategoryClick?.("microphones")}
+                  className="hover:text-amber-500 transition-colors cursor-pointer"
+                >
                   Microphones
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:text-amber-500 transition-colors">
+                <button
+                  type="button"
+                  onClick={() => onCategoryClick?.("speakers")}
+                  className="hover:text-amber-500 transition-colors cursor-pointer"
+                >
                   Speakers
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:text-amber-500 transition-colors">
-                  Amplifiers
-                </a>
+                <button
+                  type="button"
+                  onClick={() => onCategoryClick?.("amplifiers")}
+                  className="hover:text-amber-500 transition-colors cursor-pointer"
+                >
+                  Amplifiers & Mixers
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => onCategoryClick?.("cds")}
+                  className="hover:text-amber-500 transition-colors cursor-pointer"
+                >
+                  Song Discs (CDs)
+                </button>
               </li>
             </ul>
           </div>

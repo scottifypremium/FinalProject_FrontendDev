@@ -202,6 +202,15 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
+  const handleLogoClick = () => {
+    setSelectedCategory("all")
+    setSelectedType("all")
+    setSearchQuery("")
+    setSortBy("default")
+    setShowCart(false)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   // Category-specific hero content
   const getHeroContent = () => {
     const categoryContent = {
@@ -320,6 +329,7 @@ function App() {
         onCategorySelect={handleCategorySelect}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
+        onLogoClick={handleLogoClick}
       />
 
       {showCart ? (
@@ -415,6 +425,13 @@ function App() {
         onFAQClick={() => setShowFAQ(true)}
         onContactUsClick={() => setShowContactUs(true)}
         onWarrantyClick={() => setShowWarranty(true)}
+        onCategoryClick={(category) => {
+          handleCategorySelect(category)
+          const productsSection = document.getElementById("products-section")
+          if (productsSection) {
+            productsSection.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+        }}
       />
 
       {showTerms && <TermsOfService onClose={() => setShowTerms(false)} />}
