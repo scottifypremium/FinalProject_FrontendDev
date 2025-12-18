@@ -104,7 +104,7 @@ function App() {
       id: 2,
       name: "Professional Karaoke Amplifier",
       category: "amplifiers",
-      price: 599,
+      price: 10599,
       image: "/professional-karaoke-amplifier.jpg",
       description:
         "1000W stereo karaoke amplifier with echo and reverb effects. Dual microphone inputs and line-in for backing tracks.",
@@ -114,7 +114,7 @@ function App() {
       id: 3,
       name: "Studio Monitor Speakers (Pair)",
       category: "speakers",
-      price: 449,
+      price: 8449,
       image: "/studio-monitor-speakers-professional.jpg",
       description:
         "High-fidelity studio monitor speakers with 6.5-inch woofers. Ideal for karaoke backing tracks and professional audio reproduction.",
@@ -124,7 +124,7 @@ function App() {
       id: 4,
       name: "Compact PA Speaker System",
       category: "speakers",
-      price: 399,
+      price: 6499,
       image: "/compact-pa-speaker-system-portable.jpg",
       description:
         "Portable 400W PA speaker system with built-in mixer. Perfect for small venues and portable karaoke setups.",
@@ -134,7 +134,7 @@ function App() {
       id: 5,
       name: "Dynamic Vocal Microphone",
       category: "microphones",
-      price: 129,
+      price: 799,
       image: "/dynamic-vocal-microphone-professional.jpg",
       description:
         "Industry-standard dynamic microphone for lead vocals. Cardioid pattern reduces feedback and ambient noise.",
@@ -144,7 +144,7 @@ function App() {
       id: 6,
       name: "Karaoke Digital Mixer",
       category: "amplifiers",
-      price: 799,
+      price: 3799,
       image: "/digital-mixer-karaoke-professional.jpg",
       description:
         "Professional digital mixer with voice effects, echo, reverb, and harmonizer. USB recording capabilities.",
@@ -154,7 +154,7 @@ function App() {
       id: 7,
       name: "Condenser Karaoke Microphone",
       category: "microphones",
-      price: 189,
+      price: 2789,
       image: "/condenser-karaoke-microphone-professional.jpg",
       description:
         "Condenser microphone with superior sensitivity for studio-quality vocal recordings and live performances.",
@@ -164,13 +164,23 @@ function App() {
       id: 8,
       name: "Portable Karaoke Speaker Box",
       category: "speakers",
-      price: 249,
+      price: 3449,
       image: "/portable-karaoke-speaker-box.jpg",
       description:
         "Compact all-in-one karaoke speaker with built-in amplifier and effects. Wireless connectivity for easy setup.",
       specs: "200W | Wireless | Effects | Rechargeable Battery",
     },
 
+    {
+      id: 15,
+      name: "Reyna 3&4 Volume 105 Disc",
+      category: "cds",
+      price: 549,
+      image: "vol105.jpg",
+      description:
+        "Featured Songs: MAGPAHINGA, JUMP, FILIPINA QUEEN, AURA, GABRIELA, ANO BA TALAGA TAYO, GOLDEN, MYSTICAL MAGICAL, OLD PHONE",
+      specs: "8.5GB Disc | OSM Songs | 23K+ Songs Total",
+    },
   ]
 
   const categories = ["all", "karaoke", "cds", "microphones", "amplifiers", "speakers"]

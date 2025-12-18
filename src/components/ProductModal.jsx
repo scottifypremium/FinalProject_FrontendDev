@@ -20,7 +20,7 @@ export default function ProductModal({ product, onClose, onAddToCart }) {
         <div className="p-8 space-y-6">
           <div>
             <h2 className="text-3xl font-sans font-bold text-white mb-2">{product.name}</h2>
-            <p className="text-4xl font-bold text-amber-500">P{product.price}</p>
+            <p className="text-4xl font-bold text-amber-500">₱{product.price}</p>
           </div>
 
           <div className="space-y-4">
